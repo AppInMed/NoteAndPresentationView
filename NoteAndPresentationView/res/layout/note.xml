@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="2dip"
+            android:text="Notes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_normal"
+            android:textSize="16dip" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/note_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/save" />
+
+            <TextView
+                android:id="@+id/note_save_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/note_save_button"
+                android:text="Not saved"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/note_cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editable_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.21"
+            android:textColor="@color/black"
+            android:padding="2dip"
+            android:gravity="top" />
+
+    </LinearLayout>
+
+</LinearLayout>
